@@ -1,0 +1,145 @@
+/* --- 复古终端风格样式 --- */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #33ff33; /* 亮绿色 */
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    text-shadow: 0 0 5px rgba(51, 255, 51, 0.4);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #33ff33;
+    padding: 15px 25px;
+    box-shadow: 0 0 15px rgba(51, 255, 51, 0.3) inset;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    color: #aaffaa;
+}
+
+/* 闪烁的光标效果 */
+#cursor {
+    animation: blink 1s step-end infinite;
+    display: inline-block;
+}
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.subtitle {
+    margin: 5px 0 20px 0;
+    text-align: center;
+    color: #88ff88;
+}
+
+main {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px dashed #33ff33;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+legend {
+    color: #aaffaa;
+    font-size: 1.5em;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #88ff88;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: '>>> ';
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+code {
+    display: block;
+    background-color: #1a1a1a;
+    border: 1px solid #225522;
+    padding: 10px;
+    margin: 5px 0;
+    color: #ffffff;
+    word-wrap: break-word;
+    text-shadow: none;
+}
+
+.count {
+    color: #888;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.try-button {
+    display: inline-block;
+    color: #aaffaa;
+    text-decoration: none;
+    border: 1px solid #33ff33;
+    padding: 3px 8px;
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+.try-button:hover, .try-button:focus {
+    background-color: #33ff33;
+    color: #0d0d0d;
+    text-shadow: none;
+}
+
+.image-preview-container {
+    padding: 15px;
+    border: 1px solid #225522;
+    background-color: #1a1a1a;
+    margin: 20px 0;
+}
+
+.image-preview {
+    border: 1px solid #33ff33;
+    box-shadow: 0 0 10px rgba(51, 255, 51, 0.3);
+    padding: 5px;
+    background: #000;
+}
+
+.image-preview img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+small {
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px dashed #33ff33;
+    padding-top: 15px;
+    font-size: 0.9em;
+    color: #88ff88;
+}
